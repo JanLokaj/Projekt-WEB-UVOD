@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Přihlášení | Mars Mission 2035</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- Tom Select -->
+    <link rel="stylesheet" href="./node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
+
+    <!-- Vlastní CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+
+            <i class="fa-solid fa-rocket me-2"></i>
+
+            Mars Mission 2035
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Otevřít navigaci">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="index.html">
+
+                        <i class="fa-solid fa-house me-1"></i>
+                        Domů
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="mise.html">
+
+                        <i class="fa-solid fa-earth-americas me-1"></i>
+                        Mise
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="posadka.html">
+
+                        <i class="fa-solid fa-user-astronaut me-1"></i>
+                        Posádka
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link active" href="prihlaseni.html">
+
+                        <i class="fa-solid fa-clipboard-check me-1"></i>
+                        Přihlášení
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="kontakt.html">
+
+                        <i class="fa-solid fa-envelope me-1"></i>
+                        Kontakt
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero-section">
+
+    <div class="container text-center">
+
+        <div class="hero-content">
+
+            <i class="fa-solid fa-clipboard-check hero-icon"></i>
+
+            <h1 class="display-4 fw-bold">
+                Přihlášení
+            </h1>
+
+            <p class="lead">
+                Přihlaste se do programu Mars Mission 2035.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FORMULÁŘ -->
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body p-4 p-md-5">
+
+                        <div class="text-center mb-5">
+
+                            <h2 class="fw-bold">
+                                <i class="fa-solid fa-user-plus me-2"></i>
+                                Přihláška do programu
+                            </h2>
+
+                            <p class="text-secondary">
+                                Vyplňte své údaje a vyberte oblasti,
+                                ve kterých byste se chtěli zapojit.
+                            </p>
+
+                        </div>
+
+
+                        <form action="#" method="post">
+
+
+                            <!-- JMÉNO -->
+                            <div class="row g-3 mb-3">
+
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="firstName"
+                                        class="form-label fw-bold">
+
+                                        Jméno
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="firstName"
+                                        name="firstName"
+                                        placeholder="Vaše jméno"
+                                        required>
+
+                                </div>
+
+
+                                <!-- PŘÍJMENÍ -->
+                                <div class="col-md-6">
+
+                                    <label
+                                        for="lastName"
+                                        class="form-label fw-bold">
+
+                                        Příjmení
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="lastName"
+                                        name="lastName"
+                                        placeholder="Vaše příjmení"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+                            <div class="mb-4">
+
+                                <label
+                                    for="email"
+                                    class="form-label fw-bold">
+
+                                    Email
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="vas@email.cz"
+                                    required>
+
+                            </div>
+
+
+                            <!-- VĚK -->
+                            <div class="mb-4">
+
+                                <label
+                                    for="age"
+                                    class="form-label fw-bold">
+
+                                    Věk
+
+                                </label>
+
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="age"
+                                    name="age"
+                                    min="18"
+                                    max="70"
+                                    placeholder="Např. 30"
+                                    required>
+
+                            </div>
+
+
+                            <!-- MULTISELECT -->
+                            <div class="mb-4">
+
+                                <label
+                                    for="areas"
+                                    class="form-label fw-bold">
+
+                                    Oblasti zájmu
+
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="areas"
+                                    name="areas[]"
+                                    multiple
+                                    required>
+
+                                    <option value="">
+                                        vyberte...
+                                    </option>
+
+                                    <option value="vyzkum">
+                                        Výzkum Marsu
+                                    </option>
+
+                                    <option value="technologie">
+                                        Technologie
+                                    </option>
+
+                                    <option value="medicina">
+                                        Medicína
+                                    </option>
+
+                                    <option value="geologie">
+                                        Geologie
+                                    </option>
+
+                                    <option value="pilotaz">
+                                        Pilotáž
+                                    </option>
+
+                                    <option value="komunikace">
+                                        Komunikace
+                                    </option>
+
+                                </select>
+
+                                <div class="form-text">
+                                    Můžete vybrat více oblastí.
+                                </div>
+
+                            </div>
+
+
+                            <!-- ZKUŠENOST -->
+                            <div class="mb-4">
+
+                                <label
+                                    for="experience"
+                                    class="form-label fw-bold">
+
+                                    Zkušenosti
+
+                                </label>
+
+                                <select
+                                    class="form-select"
+                                    id="experience"
+                                    name="experience"
+                                    required>
+
+                                    <option value="" selected disabled>
+                                        vyberte...
+                                    </option>
+
+                                    <option value="zacatecnik">
+                                        Začátečník
+                                    </option>
+
+                                    <option value="pokrocily">
+                                        Pokročilý
+                                    </option>
+
+                                    <option value="expert">
+                                        Expert
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- MOTIVACE -->
+                            <div class="mb-4">
+
+                                <label
+                                    for="motivation"
+                                    class="form-label fw-bold">
+
+                                    Proč se chcete připojit?
+
+                                </label>
+
+                        <div class="mb-4">
+          <label for="kontaktZprava" class="form-label text-white fw-semibold">Zpráva</label>
+          <textarea id="kontaktZprava" name="zprava" rows="7"></textarea>
+        </div>
+                            </div>
+
+
+                            <!-- SOUHLAS -->
+                            <div class="form-check mb-4">
+
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="terms"
+                                    name="terms"
+                                    required>
+
+                                <label
+                                    class="form-check-label"
+                                    for="terms">
+
+                                    Souhlasím se zpracováním údajů
+                                    pro účely tohoto školního projektu.
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- ODESLAT -->
+                            <div class="text-center">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-danger btn-lg px-5">
+
+                                    <i class="fa-solid fa-paper-plane me-2"></i>
+
+                                    Odeslat přihlášku
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 text-center text-md-start">
+
+                <p class="mb-0">
+
+                    <i class="fa-solid fa-rocket me-2"></i>
+
+                    <strong>
+                        Mars Mission 2035
+                    </strong>
+
+                </p>
+
+                <small class="text-secondary">
+                    Fiktivní školní projekt
+                </small>
+
+            </div>
+
+
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+
+                <a
+                    href="dokumentace.pdf"
+                    class="text-white text-decoration-none me-3">
+
+                    <i class="fa-solid fa-file-pdf me-1"></i>
+                    Dokumentace
+
+                </a>
+
+
+                <a
+                    href="https://github.com/JanLokaj/Projekt-WEB-UVOD"
+                    class="text-white text-decoration-none" target="_blank">
+
+                    <i class="fa-brands fa-github me-1"></i>
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Tom Select -->
+<script src="./node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+
+<!-- TinyMCE -->
+<script src="./node_modules/tinymce/tinymce.min.js"></script>
+
+<!-- Inicializace -->
+<script>
+  tinymce.init({
+    selector: '#kontaktZprava',
+    license_key: 'gpl',
+    height: 240,
+    menubar: true,
+    skin: 'oxide-dark',
+    content_css: 'light',
+    plugins: 'lists link code',
+    toolbar: 'undo redo | bold italic underline | bullist numlist | link | removeformat'
+  });
+
+  new TomSelect("#areas", {
+    plugins: {
+      remove_button: {
+        title: "Odstranit"
+      }
+    },
+    placeholder: "vyberte oblasti...",
+    maxItems: null
+  });
+</script>
+
+
+</body>
+</html>

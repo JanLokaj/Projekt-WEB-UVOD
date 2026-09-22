@@ -21,6 +21,7 @@
 <!-- ================= NAVBAR ================= -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
     <div class="container">
 
         <a class="navbar-brand fw-bold" href="index.html">
@@ -28,14 +29,17 @@
             Mars Mission 2035
         </a>
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Otevřít navigaci">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Otevřít navigaci">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
         <div class="collapse navbar-collapse" id="mainNavbar">
@@ -80,7 +84,9 @@
             </ul>
 
         </div>
+
     </div>
+
 </nav>
 
 
@@ -99,17 +105,17 @@
             </h1>
 
             <p class="lead">
-                Další velký krok lidstva začíná právě zde.
+                Výprava lidstva na rudou planetu
             </p>
 
-            <p class="hero-text">
-                Připojte se k naší fiktivní misi, jejímž cílem je připravit
-                první dlouhodobou lidskou výpravu na Mars.
+            <p class="mb-4">
+                Připravujeme jednu z nejvýznamnějších vesmírných
+                misí budoucnosti.
             </p>
 
-            <a href="mise.html" class="btn btn-danger btn-lg mt-3">
-                <i class="fa-solid fa-arrow-right me-2"></i>
-                Prozkoumat misi
+            <a href="mise.html" class="btn btn-danger btn-lg">
+                <i class="fa-solid fa-rocket me-2"></i>
+                Poznat naši misi
             </a>
 
         </div>
@@ -119,7 +125,7 @@
 </section>
 
 
-<!-- ================= CAROUSEL ================= -->
+<!-- ================= KARUSEL ================= -->
 
 <section class="py-5">
 
@@ -128,116 +134,167 @@
         <div class="text-center mb-4">
 
             <h2 class="fw-bold">
-                <i class="fa-solid fa-images me-2"></i>
-                Mars a naše mise
+                <i class="fa-solid fa-image me-2"></i>
+                Mars
             </h2>
 
             <p class="text-secondary">
-                Podívejte se na místa, která jednou mohou být naším domovem.
+                Podívejte se na prostředí rudé planety.
             </p>
 
         </div>
 
 
-        <div id="marsCarousel"
-             class="carousel slide carousel-fade shadow"
-             data-bs-ride="carousel">
+        <div
+            id="marsCarousel"
+            class="carousel slide carousel-fade shadow"
+            data-bs-ride="carousel">
 
-            <!-- Indikátory -->
+
+            <!-- INDICATORS -->
 
             <div class="carousel-indicators">
 
-                <button type="button"
-                        data-bs-target="#marsCarousel"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1">
+                <button
+                    type="button"
+                    data-bs-target="#marsCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Snímek 1">
                 </button>
 
-                <button type="button"
-                        data-bs-target="#marsCarousel"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2">
+                <button
+                    type="button"
+                    data-bs-target="#marsCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Snímek 2">
                 </button>
 
-                <button type="button"
-                        data-bs-target="#marsCarousel"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3">
+                <button
+                    type="button"
+                    data-bs-target="#marsCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Snímek 3">
                 </button>
 
-                <button type="button"
-                        data-bs-target="#marsCarousel"
-                        data-bs-slide-to="3"
-                        aria-label="Slide 4">
+                <button
+                    type="button"
+                    data-bs-target="#marsCarousel"
+                    data-bs-slide-to="3"
+                    aria-label="Snímek 4">
                 </button>
 
             </div>
 
 
-            <!-- Obrázky -->
+            <!-- OBRÁZKY -->
 
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <img src="images/Mars1.jpg"
-                         class="d-block w-100 h-100"
-                         alt="Pohled na Mars z vesmíru">
 
-                    <div class="carousel-caption">
-                        <h3>Rudá planeta</h3>
-                        <p>Naše budoucí destinace.</p>
+                    <img
+                        src="images/Mars1.jpg"
+                        class="d-block w-100"
+                        alt="Povrch Marsu">
+
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>
+                            Mars z vésmíru
+                        </h5>
+
+                        <p>
+                            Rudá planeta je čtvrtou planetou sluneční soustavy.
+                        </p>
+
                     </div>
+
                 </div>
 
 
                 <div class="carousel-item">
-                    <img src="images/MarsKrajina.jpg"
-                         class="d-block w-100 h-100"
-                         alt="Krajina na Marsu">
 
-                    <div class="carousel-caption">
-                        <h3>Výzkum Marsu</h3>
-                        <p>Objevujeme tajemství rudé planety.</p>
+                    <img
+                        src="images/MarsKrajina.jpg"
+                        class="d-block w-100"
+                        alt="Krajina na Marsu">
+
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>
+                            Marská krajina
+                        </h5>
+
+                        <p>
+                            Výzkum marsovské krajiny bude jedním z hlavních
+                            úkolů mise.
+                        </p>
+
                     </div>
+
                 </div>
 
 
                 <div class="carousel-item">
-                    <img src="images/MarsTechnologie.jpg"
-                         class="d-block w-100 h-100"
-                         alt="Vozítko na Marsu">
 
-                    <div class="carousel-caption">
-                        <h3>Cesta začíná na Zemi</h3>
-                        <p>Technologie připravujeme už dnes.</p>
+                    <img
+                        src="images/MarsZakladna.jpg"
+                        class="d-block w-100"
+                        alt="Základna na Marsu">
+
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>
+                            Základna na Marsu
+                        </h5>
+
+                        <p>
+                            Takhle by mohla vypadat základna na Marsu.
+                        </p>
+
                     </div>
+
                 </div>
 
 
                 <div class="carousel-item">
-                    <img src="images/MarsZakladna.jpg"
-                         class="d-block w-100 h-100"
-                         alt="Budoucí základna na Marsu">
 
-                    <div class="carousel-caption">
-                        <h3>Budoucí základna</h3>
-                        <p>Naším cílem je vytvořit nový domov.</p>
+                    <img
+                        src="images/MarsTechnologie.jpg"
+                        class="d-block w-100"
+                        alt="Výprava na Mars">
+
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>
+                            Výprava na Mars
+                        </h5>
+
+                        <p>
+                            Cílem mise je připravit průzkum Marsu. 
+                        </p>
+
                     </div>
+
                 </div>
 
             </div>
 
 
-            <!-- Šipky -->
+            <!-- ŠIPKA DOLEVA -->
 
-            <button class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#marsCarousel"
-                    data-bs-slide="prev">
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#marsCarousel"
+                data-bs-slide="prev">
 
-                <span class="carousel-control-prev-icon"></span>
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true">
+                </span>
 
                 <span class="visually-hidden">
                     Předchozí
@@ -246,12 +303,18 @@
             </button>
 
 
-            <button class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#marsCarousel"
-                    data-bs-slide="next">
+            <!-- ŠIPKA DOPRAVA -->
 
-                <span class="carousel-control-next-icon"></span>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#marsCarousel"
+                data-bs-slide="next">
+
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true">
+                </span>
 
                 <span class="visually-hidden">
                     Další
@@ -266,7 +329,7 @@
 </section>
 
 
-<!-- ================= CARDS ================= -->
+<!-- ================= PŘEDSTAVENÍ PROJEKTU ================= -->
 
 <section class="py-5 bg-light">
 
@@ -275,12 +338,12 @@
         <div class="text-center mb-5">
 
             <h2 class="fw-bold">
-                <i class="fa-solid fa-satellite me-2"></i>
-                Co nás čeká?
+                <i class="fa-solid fa-rocket me-2"></i>
+                O projektu
             </h2>
 
             <p class="text-secondary">
-                Mise Mars Mission 2035 se skládá z několika důležitých částí.
+                Co všechno je potřeba připravit před cestou na Mars?
             </p>
 
         </div>
@@ -288,7 +351,8 @@
 
         <div class="row g-4">
 
-            <!-- Karta 1 -->
+
+            <!-- KARTA 1 -->
 
             <div class="col-md-4">
 
@@ -296,22 +360,27 @@
 
                     <div class="card-body text-center p-4">
 
-                        <div class="card-icon">
+                        <div class="card-icon mb-3">
+
                             <i class="fa-solid fa-flask"></i>
+
                         </div>
 
-                        <h3 class="card-title">
+                        <h4>
                             Výzkum
-                        </h3>
+                        </h4>
 
-                        <p class="card-text">
-                            Budeme zkoumat povrch Marsu, jeho atmosféru
-                            a možnosti života na rudé planetě.
+                        <p class="text-secondary">
+                            Zkoumáme podmínky na Marsu a hledáme
+                            možnosti budoucího lidského osídlení.
                         </p>
 
-                        <a href="mise.html"
-                           class="btn btn-outline-danger">
-                            Více informací
+                        <a
+                            href="mise.html"
+                            class="btn btn-outline-danger">
+
+                            Více o misi
+
                         </a>
 
                     </div>
@@ -321,7 +390,7 @@
             </div>
 
 
-            <!-- Karta 2 -->
+            <!-- KARTA 2 -->
 
             <div class="col-md-4">
 
@@ -329,22 +398,27 @@
 
                     <div class="card-body text-center p-4">
 
-                        <div class="card-icon">
+                        <div class="card-icon mb-3">
+
                             <i class="fa-solid fa-user-astronaut"></i>
+
                         </div>
 
-                        <h3 class="card-title">
+                        <h4>
                             Posádka
-                        </h3>
+                        </h4>
 
-                        <p class="card-text">
-                            Vybraní astronauti budou připraveni na dlouhodobý
-                            pobyt a náročné podmínky na Marsu.
+                        <p class="text-secondary">
+                            Šest astronautů bude připravováno
+                            na dlouhou cestu a pobyt na Marsu.
                         </p>
 
-                        <a href="posadka.html"
-                           class="btn btn-outline-danger">
-                            Naše posádka
+                        <a
+                            href="posadka.html"
+                            class="btn btn-outline-danger">
+
+                            Poznat posádku
+
                         </a>
 
                     </div>
@@ -354,7 +428,7 @@
             </div>
 
 
-            <!-- Karta 3 -->
+            <!-- KARTA 3 -->
 
             <div class="col-md-4">
 
@@ -362,22 +436,27 @@
 
                     <div class="card-body text-center p-4">
 
-                        <div class="card-icon">
-                            <i class="fa-solid fa-robot"></i>
+                        <div class="card-icon mb-3">
+
+                            <i class="fa-solid fa-gears"></i>
+
                         </div>
 
-                        <h3 class="card-title">
+                        <h4>
                             Technologie
-                        </h3>
+                        </h4>
 
-                        <p class="card-text">
-                            Pro misi vyvíjíme nové technologie pro dopravu,
-                            komunikaci a přežití na Marsu.
+                        <p class="text-secondary">
+                            Vyvíjíme nové technologie pro bezpečný
+                            let, komunikaci a život na Marsu.
                         </p>
 
-                        <a href="mise.html"
-                           class="btn btn-outline-danger">
-                            Naše technologie
+                        <a
+                            href="mise.html"
+                            class="btn btn-outline-danger">
+
+                            Technologie
+
                         </a>
 
                     </div>
@@ -393,7 +472,7 @@
 </section>
 
 
-<!-- ================= PROGRESS ================= -->
+<!-- ================= PROGRESS BAR ================= -->
 
 <section class="py-5">
 
@@ -403,25 +482,25 @@
 
             <h2 class="fw-bold">
                 <i class="fa-solid fa-chart-line me-2"></i>
-                Stav příprav mise
+                Stav projektu
             </h2>
 
             <p class="text-secondary">
-                Jak daleko jsme s přípravou na cestu?
+                Aktuální průběh příprav mise Mars Mission 2035.
             </p>
 
         </div>
 
 
-        <!-- Progress 1 -->
+        <!-- VÝZKUM -->
 
         <div class="mb-4">
 
-            <div class="d-flex justify-content-between mb-1">
+            <div class="d-flex justify-content-between mb-2">
 
-                <span class="fw-bold">
-                    Výzkum
-                </span>
+                <strong>
+                    Výzkum Marsu
+                </strong>
 
                 <span>
                     100 %
@@ -429,15 +508,20 @@
 
             </div>
 
-            <div class="progress" role="progressbar"
-                 aria-label="Výzkum"
-                 aria-valuenow="100"
-                 aria-valuemin="0"
-                 aria-valuemax="100">
+            <div
+                class="progress"
+                role="progressbar"
+                aria-label="Výzkum Marsu"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100">
 
-                <div class="progress-bar bg-success"
-                     style="width: 100%">
+                <div
+                    class="progress-bar bg-success"
+                    style="width: 100%">
+
                     100 %
+
                 </div>
 
             </div>
@@ -445,15 +529,15 @@
         </div>
 
 
-        <!-- Progress 2 -->
+        <!-- VÝVOJ VYBAVENÍ -->
 
         <div class="mb-4">
 
-            <div class="d-flex justify-content-between mb-1">
+            <div class="d-flex justify-content-between mb-2">
 
-                <span class="fw-bold">
+                <strong>
                     Vývoj vybavení
-                </span>
+                </strong>
 
                 <span>
                     80 %
@@ -461,15 +545,20 @@
 
             </div>
 
-            <div class="progress" role="progressbar"
-                 aria-label="Vývoj vybavení"
-                 aria-valuenow="80"
-                 aria-valuemin="0"
-                 aria-valuemax="100">
+            <div
+                class="progress"
+                role="progressbar"
+                aria-label="Vývoj vybavení"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100">
 
-                <div class="progress-bar"
-                     style="width: 80%">
+                <div
+                    class="progress-bar"
+                    style="width: 80%">
+
                     80 %
+
                 </div>
 
             </div>
@@ -477,15 +566,15 @@
         </div>
 
 
-        <!-- Progress 3 -->
+        <!-- PŘÍPRAVA POSÁDKY -->
 
         <div class="mb-4">
 
-            <div class="d-flex justify-content-between mb-1">
+            <div class="d-flex justify-content-between mb-2">
 
-                <span class="fw-bold">
+                <strong>
                     Příprava posádky
-                </span>
+                </strong>
 
                 <span>
                     70 %
@@ -493,15 +582,20 @@
 
             </div>
 
-            <div class="progress" role="progressbar"
-                 aria-label="Příprava posádky"
-                 aria-valuenow="70"
-                 aria-valuemin="0"
-                 aria-valuemax="100">
+            <div
+                class="progress"
+                role="progressbar"
+                aria-label="Příprava posádky"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100">
 
-                <div class="progress-bar"
-                     style="width: 70%">
+                <div
+                    class="progress-bar"
+                    style="width: 70%">
+
                     70 %
+
                 </div>
 
             </div>
@@ -509,15 +603,15 @@
         </div>
 
 
-        <!-- Progress 4 -->
+        <!-- TESTOVÁNÍ -->
 
         <div class="mb-4">
 
-            <div class="d-flex justify-content-between mb-1">
+            <div class="d-flex justify-content-between mb-2">
 
-                <span class="fw-bold">
+                <strong>
                     Testování technologií
-                </span>
+                </strong>
 
                 <span>
                     55 %
@@ -525,15 +619,20 @@
 
             </div>
 
-            <div class="progress" role="progressbar"
-                 aria-label="Testování technologií"
-                 aria-valuenow="55"
-                 aria-valuemin="0"
-                 aria-valuemax="100">
+            <div
+                class="progress"
+                role="progressbar"
+                aria-label="Testování technologií"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100">
 
-                <div class="progress-bar"
-                     style="width: 55%">
+                <div
+                    class="progress-bar"
+                    style="width: 55%">
+
                     55 %
+
                 </div>
 
             </div>
@@ -541,15 +640,15 @@
         </div>
 
 
-        <!-- Progress 5 -->
+        <!-- START -->
 
         <div>
 
-            <div class="d-flex justify-content-between mb-1">
+            <div class="d-flex justify-content-between mb-2">
 
-                <span class="fw-bold">
+                <strong>
                     Příprava startu
-                </span>
+                </strong>
 
                 <span>
                     30 %
@@ -557,15 +656,20 @@
 
             </div>
 
-            <div class="progress" role="progressbar"
-                 aria-label="Příprava startu"
-                 aria-valuenow="30"
-                 aria-valuemin="0"
-                 aria-valuemax="100">
+            <div
+                class="progress"
+                role="progressbar"
+                aria-label="Příprava startu"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100">
 
-                <div class="progress-bar"
-                     style="width: 30%">
+                <div
+                    class="progress-bar"
+                    style="width: 30%">
+
                     30 %
+
                 </div>
 
             </div>
@@ -585,11 +689,17 @@
 
         <div class="row align-items-center">
 
+
             <div class="col-md-6 text-center text-md-start">
 
                 <p class="mb-0">
+
                     <i class="fa-solid fa-rocket me-2"></i>
-                    <strong>Mars Mission 2035</strong>
+
+                    <strong>
+                        Mars Mission 2035
+                    </strong>
+
                 </p>
 
                 <small class="text-secondary">
@@ -601,20 +711,25 @@
 
             <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
 
-                <a href="dokumentace.pdf"
-                   class="text-white text-decoration-none me-3">
+                <a
+                    href="dokumentace.pdf"
+                    class="text-white text-decoration-none me-3">
 
                     <i class="fa-solid fa-file-pdf me-1"></i>
+
                     Dokumentace
 
                 </a>
 
-                <a href="#"
-                   class="text-white text-decoration-none">
+
+                <a
+                    href="https://github.com/JanLokaj/Projekt-WEB-UVOD"
+                    class="text-white text-decoration-none" target="_blank">
 
                     <i class="fa-brands fa-github me-1"></i>
-                    GitHub
 
+                    GitHub
+                   
                 </a>
 
             </div>
@@ -626,7 +741,8 @@
 </footer>
 
 
-<!-- Bootstrap JavaScript -->
+<!-- ================= JAVASCRIPT ================= -->
+
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
